@@ -1,87 +1,48 @@
-# Welcome to React Router!
+📄 AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+An AI-powered web application that analyzes resumes, matches them with job listings, and provides ATS-style feedback—all built with modern frontend tools and Puter.js for backend-free auth, storage, and AI.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+<a name="introduction">✨ Introduction</a>
 
-## Features
+An AI-powered Resume Analyzer with React, React Router, and Puter.js <br>
+Upload resumes, securely store them in the cloud, and instantly receive tailored ATS scores and AI-generated feedback to improve your chances of landing the job.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+<a name="tech stack">⚙️ Tech Stack</a>
 
-## Getting Started
+React → Component-based UI for fast, dynamic web apps.
 
-### Installation
+React Router v7 → Nested routing, loaders, and SSR-friendly navigation.
 
-Install the dependencies:
+Puter.com → A privacy-first internet OS for files, apps, and cloud storage.
 
-```bash
-npm install
-```
+Puter.js → Small Browser SDK with auth, storage, DB, and AI (GPT, Claude, DALL·E, OCR).
 
-### Development
+Tailwind CSS → Utility-first CSS framework for sleek, responsive designs.
 
-Start the development server with HMR:
+TypeScript → Typed superset of JS for scalability and developer confidence.
 
-```bash
-npm run dev
-```
+Vite → Lightning-fast dev server and Rollup-powered builds.
 
-Your application will be available at `http://localhost:5173`.
+Zustand → Minimal state management library with hooks.
 
-## Building for Production
+<a name="features">🔋 Features</a>
 
-Create a production build:
+➡️ Seamless Auth — Secure login directly in the browser with Puter.js.
 
-```bash
-npm run build
-```
+➡️ Resume Upload & Storage — Save and organize multiple resumes.
 
-## Deployment
+➡️ AI Resume Matching — Match resumes with job descriptions and receive ATS scores.
 
-### Docker Deployment
+➡️ Tailored Feedback — AI-powered suggestions to boost chances of selection.
 
-To build and run using Docker:
+➡️ Reusable UI — Modular, component-driven design for clean development.
 
-```bash
-docker build -t my-app .
+➡️ Cross-Device Ready — Fully responsive across desktop, tablet, and mobile.
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
+➡️ Modern UI/UX — Styled with Tailwind CSS and shadcn/ui for a polished experience.
 
-The containerized application can be deployed to any platform that supports Docker, including:
+<a name="screenshots">🖼️ Screenshots & Demo</a>
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+Here’s a preview of the Resume Analyzer in action:
 
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+➡️ Live Demo: https://puter.com/app/Resu-Mind
