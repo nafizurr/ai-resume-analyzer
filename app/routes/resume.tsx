@@ -55,16 +55,16 @@ const Resume = () => {
     return (
         //returning back home button
         <main className="!pt-0">
-            <nav className="resume-nav">
+            <nav className="flex flex-row justify-between items-center p-4 border-b">
                 <Link to= "/" className= "back-button">
                     <img src = "/icons/back.svg" alt="logo" className= "w-2.5 h-2.5" />
                     <span className= "text-gray-500 text-sm font-semibold">Back to Homepage</span>
                 </Link>
             </nav>
             <div className="flex flex-row w-full max-lg:flex-col-reverse">
-                <section className="feedback-section bg-[url('/images/bg-small.svg') bg-cover h-[100vh] sticky top-0 items-center justify-center">
+                <section className="feedback-section bg-[url('/images/bg-small.svg')] bg-cover h-[100vh] sticky top-0 items-center justify-center rounded-4xl">
                     {imageUrl && resumeUrl && (
-                        <div className="animate-in fade-in duration-1000 gradient-border max-sm:m-0 h-[90%] max-wxl:h-fit w-fit">
+                        <div className="animate-in fade-in duration-1000 gradient-border rounded-2xl max-sm:m-0 h-[90%] max-wxl:h-fit w-fit">
                         <a href={resumeUrl} target="_blank" rel="noreferrer">
                             <img
                             src={imageUrl}
@@ -77,9 +77,11 @@ const Resume = () => {
                     )}
                 </section>
                 <section className= "feedback-section">
+                    {feedback && (
                     <span className= "rounded-lg p-2 shadow-md bg-blue-200">
                         <h2 className = "text-4xl !text-black font-bold text-center">Resume Review</h2>
                     </span>
+                    )}
                     {feedback ? (
                         <div className = "flex flex-col gap-8 animate-in fade-in duration-1000">
                             <Summary feedback = {feedback} />
